@@ -1,0 +1,17 @@
+Package: zooplaR
+Type: Package
+Title: API Wrapper for Zoopla (UK Property Prices)
+Version: 0.1
+Date: 2017-03-12
+Authors@R: person("Eryk", "Walczak", email = "eryk.j.walczak@gmail.com",
+role = c("aut", "cre"))
+Description: Access average property prices, price changes, price indices, and other data provided by Zoopla.
+License: GPL-3
+URL: https://github.com/erzk/zooplaR
+BugReports: https://github.com/erzk/zooplaR/issues
+Encoding: UTF-8
+LazyData: TRUE
+Depends:
+    R (>= 3.1),
+    httr (>= 1.1.0),
+    XML (>= 3.98-1.3)
