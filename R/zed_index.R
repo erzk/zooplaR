@@ -20,10 +20,10 @@ zed_index <- function(area=NULL, output=NULL, API_key=NULL){
     stop("Please provide a valid UK outcode.")
   }
   if (!(output %in% c("town", "outcode", "county", "country"))) {
-    stop("Please provide a desired output: 'town', 'outcode', 'county', 'country'.")
+    stop("Please provide desired output: 'town', 'outcode', 'county', 'country'.")
   }
   if (!is.character(API_key)) {
-    stop("Please provide a correct API key.")
+    stop("Please provide an API key.")
   }
   area <- gsub(" ", "", area, fixed = TRUE)
   r <- GET(paste0("http://api.zoopla.co.uk/api/v1/zed_index?area=",
