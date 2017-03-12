@@ -1,6 +1,6 @@
 #' Get Session ID
 #'
-#' @param 
+#' @param NA
 #'
 #' @return A list
 #' @export
