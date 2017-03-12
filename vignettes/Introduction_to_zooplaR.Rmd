@@ -1,0 +1,35 @@
+---
+title: "Introduction to zooplaR"
+author: "Eryk Walczak"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Installation
+
+zooplaR is currently available only on GitHub. To install it use:
+
+```{r}
+install.packages("devtools")
+devtools::install_github("erzk/zooplaR")
+```
+
+This package is using the [Zoopla Developer API](http://developer.zoopla.com/) so start with reading the official [documentation](http://developer.zoopla.com/docs).
+
+You will need to [register](http://developer.zoopla.com/member/register/) for an account and an API key.
+
+Once you have the key, the best way is store it in your environment variable. For details read the [Appendix](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html).
+
+In my case, the API key is stored in the variable `zoopla_key`. I can check whether it's defined and loaded correctly using `Sys.getenv("zoopla_key")`.
+
+# Examples
+
+
+
+# Issues
+
+If you notice an error then please raise an [issue](https://github.com/erzk/zooplaR/issues).
