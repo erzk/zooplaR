@@ -15,7 +15,6 @@
 #' average_sold_prices("CF10 3XQ", "county", "outcodes", "YOUR_API_KEY")
 #' 
 average_sold_prices <- function(postcode=NULL, output=NULL, area_type=NULL, API_key=NULL){
-  #GET("http://api.zoopla.co.uk/api/v1/average_sold_prices.xml?postcode=E152BB&output_type=outcode&area_type=streets&api_key=")
   if (!is.character(postcode) || nchar(postcode) < 2) {
     stop("Please provide a valid UK outcode.")
   }
