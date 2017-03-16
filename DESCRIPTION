@@ -12,7 +12,6 @@ Encoding: UTF-8
 LazyData: TRUE
 Depends:
     R (>= 3.2),
-    assertive.data.uk (>= 0.0-1),
     dplyr (>= 0.5.0),
     httr (>= 1.2.1),
     XML (>= 3.98-1.5)
