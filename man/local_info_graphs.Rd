@@ -4,9 +4,11 @@
 \alias{local_info_graphs}
 \title{Local Info Graphs}
 \usage{
-local_info_graphs()
+local_info_graphs(area = NULL, API_key = NULL)
 }
 \arguments{
+\item{area}{A string representing a valid UK outcode, e.g. "W12".}
+
 \item{API_key}{An API key from Zoopla.}
 }
 \value{
@@ -16,6 +18,7 @@ A list.
 Local Info Graphs
 }
 \examples{
+local_info_graphs("W12", "YOUR_API_KEY")
 
 }
 \references{
