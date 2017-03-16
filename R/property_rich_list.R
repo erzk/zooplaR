@@ -1,8 +1,8 @@
 #' Property Rich List
 #'
-#' @param 
+#' @param API_key An API key from Zoopla.
 #'
-#' @return
+#' @return A list.
 #' @export
 #'
 #' @references \url{http://developer.zoopla.com/docs/read/Property_Rich_List}
