@@ -4,7 +4,9 @@
 \alias{area_zed_indices}
 \title{Area Zed-Indices}
 \usage{
-area_zed_indices()
+area_zed_indices(ordering = "descending", postcode = NULL,
+  area_type = NULL, output_type = NULL, page_number = NULL,
+  page_size = NULL, API_key = NULL)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
@@ -16,7 +18,11 @@ A list.
 Area Zed-Indices
 }
 \examples{
+area_zed_indices("descending", "sw185rw", "postcodes", "outcode", 1, 10, "YOUR_API_KEY")
+area_zed_indices(postcode = "sw185rw", area_type = "postcodes", output_type = "outcode", API_key = "YOUR_API_KEY")
 
+#http://api.zoopla.co.uk/api/v1/zed_indices.xml?api_key=xxxxxx&postcode=DE39AH&output_type=outcode&area_type=postcodes
+#http://api.zoopla.co.uk/api/v1/zed_indices?api_key=xxxxxxxx&postcode=DE39AH&output_type=outcode&area_type=streets
 }
 \references{
 \url{http://developer.zoopla.com/docs/read/area_zed_indices}
