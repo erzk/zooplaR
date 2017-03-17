@@ -14,7 +14,7 @@ vignette: >
 zooplaR is currently available only on GitHub. To install it use:
 
 ```{r}
-install.packages("devtools")
+install.packages("devtools", repos = "http://cran.us.r-project.org")
 devtools::install_github("erzk/zooplaR")
 ```
 
