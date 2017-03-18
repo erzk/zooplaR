@@ -7,6 +7,10 @@
 property_listings(postcode = NULL, area = NULL, API_key = NULL)
 }
 \arguments{
+\item{postcode}{A string. Valid UK postcode or outcode.}
+
+\item{area}{A string. Area of interest, e.g. "Nottingham".}
+
 \item{API_key}{An API key from Zoopla.}
 }
 \value{
