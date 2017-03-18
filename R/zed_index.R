@@ -1,5 +1,9 @@
 #' Zed-Index
 #'
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
 #' @param area A string representing a valid UK outcode or postcode, e.g. "NW10" or "EH1 2NG".  
 #' @param output A string representing desired output: "town", "outcode", "county", "country".
 #' @param API_key An API key from Zoopla.

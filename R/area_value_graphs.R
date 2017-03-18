@@ -1,5 +1,7 @@
 #' Area Value Graphs
 #'
+#' @import httr
+#' 
 #' @param area A string representing a valid UK outcode, e.g. "W12".
 #' @param API_key An API key from Zoopla.
 #'

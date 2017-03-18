@@ -1,5 +1,9 @@
 #' Local Info Graphs
 #'
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
 #' @param area A string representing a valid UK outcode, e.g. "W12".
 #' @param API_key An API key from Zoopla.
 #'

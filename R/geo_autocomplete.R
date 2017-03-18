@@ -1,5 +1,9 @@
 #' Geo Autocomplete
 #'
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
 #' @param search_term A string holding the search term to be auto completed.
 #' @param search_type A string. Allowed values: "listings" or "property". Defaults to "listings".
 #' @param API_key An API key from Zoopla.

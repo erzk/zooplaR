@@ -1,5 +1,9 @@
 #' Average Sold Prices
 #'
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
 #' @param postcode A string representing a valid UK outcode or postcode, e.g. "NW10" or "EH1 2NG".
 #' @param output A string representing desired output: "outcode" or "county". "county" can be combined with "streets", "towns" or "outcodes" in the area_type. "outcode" can be combined with "postcodes" or "streets" in the area_type.
 #' @param area_type A string representing desired area: "streets", "towns", "outcodes" or "postcodes".

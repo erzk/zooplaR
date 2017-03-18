@@ -1,4 +1,8 @@
 #' Area Zed-Indices
+#' 
+#' @import dplyr
+#' @import httr
+#' @import XML
 #'
 #' @param postcode A string. Valid UK postcode.
 #' @param area_type A string. Area type: "postcodes", "streets", "outcodes", "areas", "towns", "counties". Read the API documentation for details.
@@ -29,8 +33,6 @@ area_zed_indices <- function(postcode=NULL, area_type=NULL, output_type=NULL,
     stop("Please provide a valid API key. It must be a string.")
   }
   postcode <- gsub(" ", "", postcode, fixed = TRUE)
-  #http://api.zoopla.co.uk/api/v1/zed_indices.xml?api_key=xxxxxx&postcode=DE39AH&output_type=outcode&area_type=postcodes
-  #http://api.zoopla.co.uk/api/v1/zed_indices?api_key=xxxxxxxx&postcode=DE39AH&output_type=outcode&area_type=streets
   r <- GET("http://api.zoopla.co.uk/api/v1/zed_indices",
            query = list(postcode = postcode, area_type = area_type, output_type = output_type,
                         page_number = page_number, page_size = page_size,

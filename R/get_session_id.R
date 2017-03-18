@@ -1,5 +1,9 @@
 #' Get Session ID
 #'
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
 #' @param API_key An API key from Zoopla.
 #'
 #' @return A string - session ID.

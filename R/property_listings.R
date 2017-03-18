@@ -1,5 +1,11 @@
 #' Property Listings
-#'
+#' 
+#' @import dplyr
+#' @import httr
+#' @import XML
+#' 
+#' @param postcode A string. Valid UK postcode or outcode.
+#' @param area A string. Area of interest, e.g. "Nottingham".
 #' @param API_key An API key from Zoopla.
 #'
 #' @return A list.
