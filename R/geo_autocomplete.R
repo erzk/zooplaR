@@ -10,7 +10,10 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Geo_Autocomplete}
 #'
 #' @examples
+#' \dontrun{
+#' 
 #' geo_autocomplete("ruislip", "listings", "YOUR_API_KEY")
+#' }
 #' 
 geo_autocomplete <- function(search_term=NULL, search_type="listings", API_key=NULL){
   if (!is.character(search_term)) {

@@ -16,7 +16,10 @@ A string - session ID.
 Get Session ID
 }
 \examples{
+\dontrun{
+
 get_session_id("YOUR_API_KEY")
+}
 
 }
 \references{

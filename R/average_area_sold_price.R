@@ -10,9 +10,12 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Average_area_sold_price}
 #'
 #' @examples
+#' \dontrun{
+#' 
 #' average_area_sold_price("Edinburgh", "country", "YOUR_API_KEY")
 #' average_area_sold_price("EH1 2NG", "outcode", "YOUR_API_KEY")
 #' average_area_sold_price("EH1", "county", "YOUR_API_KEY")
+#' }
 #' 
 average_area_sold_price <- function(area=NULL, output=NULL, API_key=NULL){
   if (!is.character(area) || nchar(area) < 2) {

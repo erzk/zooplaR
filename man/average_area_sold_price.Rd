@@ -20,9 +20,12 @@ A list.
 Average Area Sold Price
 }
 \examples{
+\dontrun{
+
 average_area_sold_price("Edinburgh", "country", "YOUR_API_KEY")
 average_area_sold_price("EH1 2NG", "outcode", "YOUR_API_KEY")
 average_area_sold_price("EH1", "county", "YOUR_API_KEY")
+}
 
 }
 \references{

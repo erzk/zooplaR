@@ -18,7 +18,10 @@ A list.
 Local Info Graphs
 }
 \examples{
+\dontrun{
+
 local_info_graphs("W12", "YOUR_API_KEY")
+}
 
 }
 \references{

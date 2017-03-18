@@ -18,8 +18,10 @@ A list.
 Area Value Graphs
 }
 \examples{
-area_value_graphs("W12", "YOUR_API_KEY")
+\dontrun{
 
+area_value_graphs("W12", "YOUR_API_KEY")
+}
 }
 \references{
 \url{http://developer.zoopla.com/docs/read/Area_Value_Graphs}

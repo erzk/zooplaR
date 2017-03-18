@@ -18,11 +18,12 @@ A list.
 Area Zed-Indices
 }
 \examples{
+\dontrun{
+
 area_zed_indices("descending", "sw185rw", "postcodes", "outcode", 1, 10, "YOUR_API_KEY")
 area_zed_indices(postcode = "sw185rw", area_type = "postcodes", output_type = "outcode", API_key = "YOUR_API_KEY")
+}
 
-#http://api.zoopla.co.uk/api/v1/zed_indices.xml?api_key=xxxxxx&postcode=DE39AH&output_type=outcode&area_type=postcodes
-#http://api.zoopla.co.uk/api/v1/zed_indices?api_key=xxxxxxxx&postcode=DE39AH&output_type=outcode&area_type=streets
 }
 \references{
 \url{http://developer.zoopla.com/docs/read/area_zed_indices}

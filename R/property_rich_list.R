@@ -8,8 +8,11 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Property_Rich_List}
 #'
 #' @examples
+#' \dontrun{
 #' 
-
+#' 
+#' }
+#' 
 property_rich_list <- function(){
   
 }

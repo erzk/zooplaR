@@ -9,7 +9,10 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Local_Info_Graphs}
 #'
 #' @examples
+#' \dontrun{
+#' 
 #' local_info_graphs("W12", "YOUR_API_KEY")
+#' }
 #' 
 local_info_graphs <- function(area=NULL, API_key=NULL){
   if (!is.character(area) || nchar(area) < 2) {

@@ -4,7 +4,7 @@
 \alias{property_listings}
 \title{Property Listings}
 \usage{
-property_listings()
+property_listings(postcode = NULL, area = NULL, API_key = NULL)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
@@ -16,6 +16,10 @@ A list.
 Property Listings
 }
 \examples{
+\dontrun{
+
+property_listings()
+}
 
 }
 \references{

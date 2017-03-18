@@ -8,7 +8,10 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Get_Session_ID}
 #'
 #' @examples
+#' \dontrun{
+#' 
 #' get_session_id("YOUR_API_KEY")
+#' }
 #' 
 get_session_id <- function(API_key=NULL){
   if (!is.character(API_key)) {

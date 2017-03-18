@@ -20,10 +20,13 @@ A list
 Zed-Index
 }
 \examples{
+\dontrun{
+
 zed_index("NW10", "outcode", "YOUR_API_KEY")
 zed_index("E151AZ", "town", "YOUR_API_KEY")
 zed_index("EH1 2NG", "county", "YOUR_API_KEY")
 zed_index("CF10 3XQ", "country", "YOUR_API_KEY")
+}
 
 }
 \references{

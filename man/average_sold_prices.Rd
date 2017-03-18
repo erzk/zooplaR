@@ -23,8 +23,11 @@ A list.
 Average Sold Prices
 }
 \examples{
+\dontrun{
+
 average_sold_prices("EH1 2NG", "outcode", "streets", "YOUR_API_KEY")
 average_sold_prices("CF10 3XQ", "county", "outcodes", "YOUR_API_KEY")
+}
 
 }
 \references{

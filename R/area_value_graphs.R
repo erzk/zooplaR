@@ -9,8 +9,10 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Area_Value_Graphs}
 #'
 #' @examples
-#' area_value_graphs("W12", "YOUR_API_KEY")
+#' \dontrun{
 #' 
+#' area_value_graphs("W12", "YOUR_API_KEY")
+#' }
 area_value_graphs <- function(area=NULL, API_key=NULL){
   if (!is.character(area) || nchar(area) < 2) {
     stop("Please provide a valid UK outcode.")

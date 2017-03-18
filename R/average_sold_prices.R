@@ -11,8 +11,11 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Average_Sold_Prices}
 #'
 #' @examples
+#' \dontrun{
+#' 
 #' average_sold_prices("EH1 2NG", "outcode", "streets", "YOUR_API_KEY")
 #' average_sold_prices("CF10 3XQ", "county", "outcodes", "YOUR_API_KEY")
+#' }
 #' 
 average_sold_prices <- function(postcode=NULL, output=NULL, area_type=NULL, API_key=NULL){
   if (!is.character(postcode) || nchar(postcode) < 2) {

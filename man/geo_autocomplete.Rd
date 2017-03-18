@@ -21,7 +21,10 @@ A list
 Geo Autocomplete
 }
 \examples{
+\dontrun{
+
 geo_autocomplete("ruislip", "listings", "YOUR_API_KEY")
+}
 
 }
 \references{

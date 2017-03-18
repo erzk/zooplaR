@@ -16,6 +16,10 @@ A list.
 Refine Estimate
 }
 \examples{
+\dontrun{
+
+refine_estimate()
+}
 
 }
 \references{
