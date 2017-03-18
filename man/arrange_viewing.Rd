@@ -4,7 +4,7 @@
 \alias{arrange_viewing}
 \title{Arrange Viewing}
 \usage{
-arrange_viewing()
+arrange_viewing(API_key = NULL)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
@@ -16,6 +16,10 @@ A list.
 Arrange Viewing
 }
 \examples{
+\dontrun{
+
+arrange_viewing()
+}
 
 }
 \references{

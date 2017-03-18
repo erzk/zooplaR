@@ -4,7 +4,7 @@
 \alias{arrange_appraisals}
 \title{Arrange Appraisals}
 \usage{
-arrange_appraisals()
+arrange_appraisals(API_key = NULL)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
@@ -16,6 +16,10 @@ A list.
 Arrange Appraisals
 }
 \examples{
+\dontrun{
+
+arrange_appraisals()
+}
 
 }
 \references{

@@ -8,8 +8,11 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Arrange_Appraisals}
 #'
 #' @examples
+#' \dontrun{
 #' 
-
-arrange_appraisals <- function(){
+#' arrange_appraisals()
+#' }
+#' 
+arrange_appraisals <- function(API_key=NULL){
   
 }

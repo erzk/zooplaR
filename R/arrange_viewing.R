@@ -8,8 +8,11 @@
 #' @references \url{http://developer.zoopla.com/docs/read/Arrange_Viewing}
 #'
 #' @examples
+#' \dontrun{
 #' 
-
-arrange_viewing <- function(){
+#' arrange_viewing()
+#' }
+#' 
+arrange_viewing <- function(API_key=NULL){
   
 }
