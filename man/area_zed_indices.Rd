@@ -4,12 +4,24 @@
 \alias{area_zed_indices}
 \title{Area Zed-Indices}
 \usage{
-area_zed_indices(ordering = "descending", postcode = NULL,
-  area_type = NULL, output_type = NULL, page_number = NULL,
-  page_size = NULL, API_key = NULL)
+area_zed_indices(postcode = NULL, area_type = NULL, output_type = NULL,
+  page_number = NULL, page_size = NULL, API_key = NULL,
+  ordering = "descending")
 }
 \arguments{
+\item{postcode}{A string. Valid UK postcode.}
+
+\item{area_type}{A string. Area type: "postcodes", "streets", "outcodes", "areas", "towns", "counties". Read the API documentation for details.}
+
+\item{output_type}{A string. Required output: "outcode", "area", "town", "county", "country". Read the API documentation for details.}
+
+\item{page_number}{An integer. The page number of results to request, default is 1.}
+
+\item{page_size}{An integer. The size of each page of results, default is 10, maximum is 20.}
+
 \item{API_key}{An API key from Zoopla.}
+
+\item{ordering}{A string. The order in which the results should be returned in, either "descending" (default) or "ascending".}
 }
 \value{
 A list.
@@ -20,7 +32,7 @@ Area Zed-Indices
 \examples{
 \dontrun{
 
-area_zed_indices("descending", "sw185rw", "postcodes", "outcode", 1, 10, "YOUR_API_KEY")
+area_zed_indices("sw185rw", "postcodes", "outcode", 1, 10, "YOUR_API_KEY", "descending")
 area_zed_indices(postcode = "sw185rw", area_type = "postcodes", output_type = "outcode", API_key = "YOUR_API_KEY")
 }
 
