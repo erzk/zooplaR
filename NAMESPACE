@@ -2,8 +2,6 @@
 
 export(area_value_graphs)
 export(area_zed_indices)
-export(arrange_appraisals)
-export(arrange_viewing)
 export(average_area_sold_price)
 export(average_sold_prices)
 export(geo_autocomplete)
