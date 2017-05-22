@@ -1,6 +1,6 @@
 #' Geo Autocomplete
 #'
-#' @importFrom dplyr `%>%`
+#' @import dplyr
 #' @import httr
 #' @import XML
 #' 

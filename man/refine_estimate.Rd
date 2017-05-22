@@ -4,7 +4,8 @@
 \alias{refine_estimate}
 \title{Refine Estimate}
 \usage{
-refine_estimate()
+refine_estimate(API_key, session, property_id, property_type, tenure,
+  num_bedrooms, num_bathrooms, num_receptions)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
@@ -18,6 +19,9 @@ Refine Estimate
 \examples{
 \dontrun{
 
+sid <- get_session_id(APIKEY)
+
+# if the values provided are incorrect then error 400 is returned
 refine_estimate()
 }
 

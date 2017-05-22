@@ -1,6 +1,6 @@
 #' Area Zed-Indices
 #' 
-#' @importFrom dplyr `%>%`
+#' @import dplyr
 #' @import httr
 #' @import XML
 #'
