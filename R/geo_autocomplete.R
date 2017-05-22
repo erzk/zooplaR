@@ -1,6 +1,6 @@
 #' Geo Autocomplete
 #'
-#' @import dplyr
+#' @importFrom dplyr `%>%`
 #' @import httr
 #' @import XML
 #' 
@@ -29,7 +29,7 @@ geo_autocomplete <- function(search_term=NULL, search_type="listings", API_key=N
   if (!is.character(API_key)) {
     stop("Please provide an API key.")
   }
-  r <- GET("http://api.zoopla.co.uk/api/v1/geo_autocomplete",
+  r <- GET("https://api.zoopla.co.uk/api/v1/geo_autocomplete",
            query = list(api_key = API_key, search_term = search_term, search_type = search_type))
   warn_for_status(r)
   r %>% content(encoding="UTF-8") %>%

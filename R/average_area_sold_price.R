@@ -32,7 +32,7 @@ average_area_sold_price <- function(area=NULL, output=NULL, API_key=NULL){
     stop("Please provide an API key.")
   }
   area <- gsub(" ", "", area, fixed = TRUE)
-  r <- GET(paste0("http://api.zoopla.co.uk/api/v1/average_area_sold_price.xml?api_key=",
+  r <- GET(paste0("https://api.zoopla.co.uk/api/v1/average_area_sold_price.xml?api_key=",
                   API_key,
                   "&output_type=",
                   output,

@@ -35,7 +35,7 @@ average_sold_prices <- function(postcode=NULL, output=NULL, area_type=NULL, API_
     stop("Please provide an API key.")
   }
   postcode <- gsub(" ", "", postcode, fixed = TRUE)
-  r <- GET(paste0("http://api.zoopla.co.uk/api/v1/average_sold_prices.xml?postcode=",
+  r <- GET(paste0("https://api.zoopla.co.uk/api/v1/average_sold_prices.xml?postcode=",
                   postcode,
                   "&output_type=",
                   output,

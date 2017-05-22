@@ -16,8 +16,8 @@
 #' @examples
 #' \dontrun{
 #' 
-#' property_listings(postcode = "E1", API_key = APIKEY)
-#' property_listings(area = "Nottingham", API_key = APIKEY)
+#' property_listings(postcode = "E1", API_key = "YOUR_API_KEY")
+#' property_listings(area = "Nottingham", API_key = "YOUR_API_KEY")
 #' }
 #' 
 property_listings <- function(postcode=NULL, area=NULL, API_key=NULL){
@@ -27,7 +27,7 @@ property_listings <- function(postcode=NULL, area=NULL, API_key=NULL){
   if (!is.character(API_key)) {
     stop("Please provide an API key.")
   }
-  r <- GET("http://api.zoopla.co.uk/api/v1/property_listings.xml",
+  r <- GET("https://api.zoopla.co.uk/api/v1/property_listings.xml",
            query = list(postcode = postcode, area = area, api_key = API_key))
   warn_for_status(r)
   r %>% content(encoding="UTF-8") %>%

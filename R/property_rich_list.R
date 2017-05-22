@@ -13,6 +13,6 @@
 #' 
 #' }
 #' 
-property_rich_list <- function(){
+property_rich_list <- function(API_key){
   
 }

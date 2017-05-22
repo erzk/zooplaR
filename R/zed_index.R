@@ -33,7 +33,7 @@ zed_index <- function(area=NULL, output=NULL, API_key=NULL){
     stop("Please provide an API key.")
   }
   area <- gsub(" ", "", area, fixed = TRUE)
-  r <- GET(paste0("http://api.zoopla.co.uk/api/v1/zed_index?area=",
+  r <- GET(paste0("https://api.zoopla.co.uk/api/v1/zed_index?area=",
                   area,
                   "&output_type=",
                   output,

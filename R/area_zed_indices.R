@@ -1,6 +1,6 @@
 #' Area Zed-Indices
 #' 
-#' @import dplyr
+#' @importFrom dplyr `%>%`
 #' @import httr
 #' @import XML
 #'
@@ -33,7 +33,7 @@ area_zed_indices <- function(postcode=NULL, area_type=NULL, output_type=NULL,
     stop("Please provide a valid API key. It must be a string.")
   }
   postcode <- gsub(" ", "", postcode, fixed = TRUE)
-  r <- GET("http://api.zoopla.co.uk/api/v1/zed_indices",
+  r <- GET("https://api.zoopla.co.uk/api/v1/zed_indices",
            query = list(postcode = postcode, area_type = area_type, output_type = output_type,
                         page_number = page_number, page_size = page_size,
                         api_key = API_key, ordering = ordering))
