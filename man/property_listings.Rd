@@ -22,7 +22,8 @@ Property Listings
 \examples{
 \dontrun{
 
-property_listings()
+property_listings(postcode = "E1", API_key = APIKEY)
+property_listings(area = "Nottingham", API_key = APIKEY)
 }
 
 }
