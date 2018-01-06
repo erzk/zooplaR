@@ -4,7 +4,7 @@
 \alias{property_rich_list}
 \title{Property Rich List}
 \usage{
-property_rich_list()
+property_rich_list(API_key)
 }
 \arguments{
 \item{API_key}{An API key from Zoopla.}
