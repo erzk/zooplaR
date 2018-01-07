@@ -13,7 +13,7 @@ vignette: >
 
 zooplaR is currently available only on GitHub. To install it use:
 
-```{r}
+```{r, eval = FALSE}
 install.packages("devtools")
 devtools::install_github("erzk/zooplaR")
 ```
@@ -28,7 +28,7 @@ In my case, the API key is stored in the variable `zoopla_key`. I can check whet
 
 # Examples
 
-
+See the README file.
 
 # Issues
 
