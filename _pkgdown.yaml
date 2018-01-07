@@ -2,20 +2,20 @@ title: zooplaR
 url: https://erzk.github.io/zooplaR
 template:
   params:
-    bootswatch: pulse
+    bootswatch: flatly
 reference:
   - title: Graph functions
-    desc: Create graphs
+    desc: ~
     contents:
       - '`area_value_graphs`'
       - '`local_info_graphs`'
   - title: Index functions
-    desc: Create indices
+    desc: ~
     contents:
       - '`area_zed_indices`'
-      - '`zed_index `'
+      - '`zed_index`'
   - title: Prices
-    desc: Create indices
+    desc: ~
     contents:
       - '`average_area_sold_price`'
       - '`average_sold_prices`'
@@ -29,4 +29,4 @@ reference:
       - '`property_rich_list`'
       - '`refine_estimate`'
 navbar:
-  type: standard
+  type: inverse
