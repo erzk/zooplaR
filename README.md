@@ -6,9 +6,7 @@ zooplaR
 
 ### About
 
-*Work in progress*
-
-This package is an API wrapper for accessing the UK housing market data from [Zoopla](http://www.zoopla.co.uk/).
+This package is an API wrapper for accessing the UK housing market data from [Zoopla](http://www.zoopla.co.uk/). Check the package's [website](https://erzk.github.io/zooplaR/) for more examples.
 
 ### Installation
 
@@ -56,7 +54,7 @@ This will be useful for other calls
 
 ``` r
 get_session_id(zoopla_key)
-#> [1] "95e7275ad812c7b4b3ed46479b4106a0"
+#> [1] "cfc3d069f6c7b9478a4c2ace6efa0d5d"
 ```
 
 Get the average property prices
