@@ -54,7 +54,7 @@ This will be useful for other calls
 
 ``` r
 get_session_id(zoopla_key)
-#> [1] "cfc3d069f6c7b9478a4c2ace6efa0d5d"
+#> [1] "492baff7d4cd3bdba14ca3d15a9541ba"
 ```
 
 Get the average property prices
@@ -352,17 +352,71 @@ Property listings
 You can get the Zoopla listings for a particular area using the following call:
 
 ``` r
-listings <- property_listings(postcode = "EH1 2NG", API_key = zoopla_key)
+listings <- property_listings(postcode = "E15 4QS", API_key = zoopla_key)
 
 # overview
 names(listings)
 #>  [1] "area_name"    "bounding_box" "country"      "county"      
-#>  [5] "latitude"     "longitude"    "postcode"     "result_count"
-#>  [9] "street"       "town"
+#>  [5] "latitude"     "listing"      "listing"      "listing"     
+#>  [9] "listing"      "listing"      "listing"      "listing"     
+#> [13] "listing"      "listing"      "listing"      "longitude"   
+#> [17] "postcode"     "result_count" "street"       "town"
 
 str(listings[6])
 #> List of 1
-#>  $ longitude: chr "-3.201478"
+#>  $ listing:List of 42
+#>   ..$ agent_address       : chr "5 Harbour Exchange Square, Canary Wharf, London"
+#>   ..$ agent_logo          : chr "https://st.zoocdn.com/zoopla_static_agent_logo_(457665).png"
+#>   ..$ agent_name          : chr "Ernest-Brooks International"
+#>   ..$ agent_phone         : chr "020 8115 8214"
+#>   ..$ category            : chr "Residential"
+#>   ..$ country             : chr "England"
+#>   ..$ country_code        : chr "gb"
+#>   ..$ county              : chr "London"
+#>   ..$ description         : chr "*investors portfolio* We are delighted to offer a 5 property off-plan investment portfolio, available for bulk "| __truncated__
+#>   ..$ details_url         : chr "https://www.zoopla.co.uk/for-sale/details/45389808?utm_source=v1:7-KHQG7DHECLpUX8bL0ztmDrIhQoz7qY&utm_medium=api"
+#>   ..$ displayable_address : chr "Stratford City, Stratford E15"
+#>   ..$ first_published_date: chr "2017-10-26 15:46:22"
+#>   ..$ floor_area          :List of 3
+#>   .. ..$ name : chr "max_floor_area"
+#>   .. ..$ units: chr "sq_feet"
+#>   .. ..$ value: chr "782"
+#>   ..$ floor_area          :List of 3
+#>   .. ..$ name : chr "min_floor_area"
+#>   .. ..$ units: chr "sq_feet"
+#>   .. ..$ value: chr "782"
+#>   ..$ furnished_state     : NULL
+#>   ..$ image_150_113_url   : chr "https://lid.zoocdn.com/150/113/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ image_354_255_url   : chr "https://lid.zoocdn.com/354/255/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ image_50_38_url     : chr "https://lid.zoocdn.com/50/38/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ image_645_430_url   : chr "https://lid.zoocdn.com/645/430/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ image_80_60_url     : chr "https://lid.zoocdn.com/80/60/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ image_caption       : NULL
+#>   ..$ image_url           : chr "https://lid.zoocdn.com/354/255/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
+#>   ..$ last_published_date : chr "2017-12-18 19:24:22"
+#>   ..$ latitude            : chr "51.54048"
+#>   ..$ listing_id          : chr "45389808"
+#>   ..$ listing_status      : chr "sale"
+#>   ..$ longitude           : chr "0.00032"
+#>   ..$ new_home            : chr "true"
+#>   ..$ num_bathrooms       : chr "0"
+#>   ..$ num_bedrooms        : chr "8"
+#>   ..$ num_floors          : chr "0"
+#>   ..$ num_recepts         : chr "0"
+#>   ..$ outcode             : chr "E15"
+#>   ..$ post_town           : chr "London"
+#>   ..$ price               : chr "2950000"
+#>   ..$ price_change        :List of 4
+#>   .. ..$ date     : chr "2017-10-26 15:45:57"
+#>   .. ..$ direction: NULL
+#>   .. ..$ percent  : chr "0%"
+#>   .. ..$ price    : chr "2950000"
+#>   ..$ property_report_url : chr "https://www.zoopla.co.uk/area-report/?listing_id=45389808&z_cmp=property%20report&z_con=get%20a%20report&z_med="| __truncated__
+#>   ..$ property_type       : chr "Flat"
+#>   ..$ short_description   : chr "<p class=\"top\">*investors portfolio* We are delighted to offer a 5 property off-plan investment portfolio, av"| __truncated__
+#>   ..$ status              : chr "for_sale"
+#>   ..$ street_name         : chr "Stratford City"
+#>   ..$ thumbnail_url       : chr "https://lid.zoocdn.com/80/60/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"
 ```
 
 Get house price charts

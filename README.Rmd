@@ -124,7 +124,7 @@ str(azi)
 You can get the Zoopla listings for a particular area using the following call:
 
 ```{r}
-listings <- property_listings(postcode = "EH1 2NG", API_key = zoopla_key)
+listings <- property_listings(postcode = "E15 4QS", API_key = zoopla_key)
 
 # overview
 names(listings)
