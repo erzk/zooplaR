@@ -27,7 +27,7 @@ area_zed_indices(postcode = NULL, area_type = NULL, output_type = NULL,
 A list.
 }
 \description{
-Area Zed-Indices
+Retrieve a list of house price estimates for the requested area.
 }
 \examples{
 \dontrun{

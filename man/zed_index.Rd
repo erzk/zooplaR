@@ -17,7 +17,7 @@ zed_index(area = NULL, output = NULL, API_key = NULL)
 A list
 }
 \description{
-Zed-Index
+Retrieve the Zoopla.co.uk Zed-Index! for a requested area.
 }
 \examples{
 \dontrun{

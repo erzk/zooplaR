@@ -17,7 +17,7 @@ average_area_sold_price(area = NULL, output = NULL, API_key = NULL)
 A list.
 }
 \description{
-Average Area Sold Price
+Retrieve the average sale price for houses in a particular area.
 }
 \examples{
 \dontrun{

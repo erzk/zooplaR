@@ -1,5 +1,7 @@
 #' Local Info Graphs
 #'
+#' Generate a set of graphs of local info for an outcode (and optional incode) and return the URL to the generated image.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML

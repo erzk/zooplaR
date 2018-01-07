@@ -20,7 +20,7 @@ average_sold_prices(postcode = NULL, output = NULL, area_type = NULL,
 A list.
 }
 \description{
-Average Sold Prices
+Retrieve the average sale price for a particular sub-area type within a particular area.
 }
 \examples{
 \dontrun{

@@ -1,5 +1,8 @@
 #' Postcode Properties
 #'
+#' Allows developers to build their own Appraisal engine like the one on Zoopla
+#' by making three separate API calls to find a property and contact the agent for a valuation. Step 1 only.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML
@@ -30,5 +33,5 @@ postcode_properties <- function(postcode=NULL, API_key=NULL){
   r <- GET("https://api.zoopla.co.uk/api/v1/postcode_properties",
            query = list(postcode = postcode, api_key = API_key))
   warn_for_status(r)
-  r %>% content(encoding="UTF-8") %>% xmlParse() %>%  xmlToList() %>% return()
+  r %>% content(encoding = "UTF-8") %>% xmlParse() %>%  xmlToList() %>% return()
 }

@@ -28,7 +28,7 @@ refine_estimate(property_id, session, property_type, tenure, num_bedrooms,
 A list.
 }
 \description{
-Refine Estimate
+Request a more accurate Zoopla.co.uk Zed-Index based on extra data provided.
 }
 \examples{
 \dontrun{

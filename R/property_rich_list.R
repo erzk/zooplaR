@@ -1,5 +1,7 @@
 #' Property Rich List
 #'
+#' Retrieve richlist values for a specific area.
+#'
 #' @param API_key An API key from Zoopla.
 #'
 #' @return A list.
@@ -10,9 +12,9 @@
 #' @examples
 #' \dontrun{
 #' 
-#' 
+#' property_rich_list()
 #' }
 #' 
 property_rich_list <- function(API_key){
-  
+  # TODO
 }

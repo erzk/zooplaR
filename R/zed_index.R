@@ -1,5 +1,7 @@
 #' Zed-Index
 #'
+#' Retrieve the Zoopla.co.uk Zed-Index! for a requested area.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML
@@ -40,5 +42,5 @@ zed_index <- function(area=NULL, output=NULL, API_key=NULL){
                   "&api_key=",
                   API_key))
   warn_for_status(r)
-  r %>% content(encoding="UTF-8") %>% xmlParse() %>%  xmlToList() %>% return()
+  r %>% content(encoding = "UTF-8") %>% xmlParse() %>%  xmlToList() %>% return()
 }

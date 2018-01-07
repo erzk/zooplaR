@@ -1,5 +1,7 @@
 #' Property Listings
 #' 
+#' Retrieve property listings for a given area.
+#' 
 #' @import dplyr
 #' @import httr
 #' @import XML
@@ -21,16 +23,16 @@
 #' }
 #' 
 property_listings <- function(postcode=NULL, area=NULL, API_key=NULL){
-  if (missing(postcode) || missing(area)) {
-    stop("Please provide a valid UK postcode or area name. It should be unambiguous.")
-  }
+  # if (missing(postcode) || missing(area)) {
+  #   stop("Please provide a valid UK postcode or area name. It should be unambiguous.")
+  # }
   if (!is.character(API_key)) {
     stop("Please provide an API key.")
   }
   r <- GET("https://api.zoopla.co.uk/api/v1/property_listings.xml",
            query = list(postcode = postcode, area = area, api_key = API_key))
   warn_for_status(r)
-  r %>% content(encoding="UTF-8") %>%
+  r %>% content(encoding = "UTF-8") %>%
     xmlParse() %>%
     xmlToList() %>%
     return()

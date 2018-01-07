@@ -15,7 +15,8 @@ postcode_properties(postcode = NULL, API_key = NULL)
 A list.
 }
 \description{
-Postcode Properties
+Allows developers to build their own Appraisal engine like the one on Zoopla
+by making three separate API calls to find a property and contact the agent for a valuation. Step 1 only.
 }
 \examples{
 \dontrun{

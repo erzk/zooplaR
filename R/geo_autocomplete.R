@@ -1,5 +1,7 @@
 #' Geo Autocomplete
 #'
+#' Shows the auto suggestion for locations. 
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML

@@ -13,7 +13,7 @@ get_session_id(API_key = NULL)
 A string - session ID.
 }
 \description{
-Get Session ID
+Obtain a session ID parameter for use with associated method calls.
 }
 \examples{
 \dontrun{

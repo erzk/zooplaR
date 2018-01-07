@@ -1,5 +1,7 @@
 #' Average Area Sold Price
 #'
+#' Retrieve the average sale price for houses in a particular area.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML

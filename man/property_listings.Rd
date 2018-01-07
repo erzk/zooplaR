@@ -17,7 +17,7 @@ property_listings(postcode = NULL, area = NULL, API_key = NULL)
 A list.
 }
 \description{
-Property Listings
+Retrieve property listings for a given area.
 }
 \examples{
 \dontrun{

@@ -1,5 +1,7 @@
 #' Refine Estimate
 #'
+#' Request a more accurate Zoopla.co.uk Zed-Index based on extra data provided.
+#'
 #' @param property_id Property id. Can be extracted with postcode_properties. Need to be a live listing.
 #' @param session Session ID. Use get_session_id to fetch it.
 #' @param property_type Type of property. Must be one of the following: detached, link_detached, semi_detached, terraced, flat, end_terrace, maisonette, mews, town_house, cottage, bungalow, farm_barn, park_home

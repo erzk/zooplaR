@@ -1,5 +1,7 @@
 #' Area Zed-Indices
 #' 
+#' Retrieve a list of house price estimates for the requested area.
+#' 
 #' @import dplyr
 #' @import httr
 #' @import XML

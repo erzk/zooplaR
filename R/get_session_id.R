@@ -1,5 +1,7 @@
 #' Get Session ID
 #'
+#' Obtain a session ID parameter for use with associated method calls.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML

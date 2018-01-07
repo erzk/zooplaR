@@ -13,12 +13,12 @@ property_rich_list(API_key)
 A list.
 }
 \description{
-Property Rich List
+Retrieve richlist values for a specific area.
 }
 \examples{
 \dontrun{
 
-
+property_rich_list()
 }
 
 }

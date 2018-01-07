@@ -15,7 +15,7 @@ local_info_graphs(area = NULL, API_key = NULL)
 A list.
 }
 \description{
-Local Info Graphs
+Generate a set of graphs of local info for an outcode (and optional incode) and return the URL to the generated image.
 }
 \examples{
 \dontrun{

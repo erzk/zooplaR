@@ -1,5 +1,7 @@
 #' Average Sold Prices
 #'
+#' Retrieve the average sale price for a particular sub-area type within a particular area.
+#'
 #' @import dplyr
 #' @import httr
 #' @import XML

@@ -1,5 +1,9 @@
 #' Area Value Graphs
 #'
+#' Generate a graph of values for an outcode over the previous 3 months and return the URL to the generated image.
+#' Please note that the output type must always be "outcode" for this method and therefore
+#' an area sufficient to produce an outcode is required.
+#'
 #' @import httr
 #' 
 #' @param area A string representing a valid UK outcode, e.g. "W12".

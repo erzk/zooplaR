@@ -18,7 +18,7 @@ geo_autocomplete(search_term = NULL, search_type = "listings",
 A list
 }
 \description{
-Geo Autocomplete
+Shows the auto suggestion for locations.
 }
 \examples{
 \dontrun{
