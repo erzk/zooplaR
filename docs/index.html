@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>API Wrapper for zoopla.co.uk (UK Property Prices) • zooplaR</title>
-<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container template-vignette">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <header><div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -48,6 +48,9 @@
       <a href="articles/Introduction_to_zooplaR.html">Introduction to zooplaR</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="news/index.html">News</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -110,7 +113,7 @@
 <a href="#get-the-session-id" class="anchor"></a>Get the session id</h2>
 <p>This will be useful for other calls</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/get_session_id.html">get_session_id</a></span>(zoopla_key)
-<span class="co">#&gt; [1] "3fb1ed2c2c81507aba80f3209849bdb1"</span></code></pre></div>
+<span class="co">#&gt; [1] "2df25c87c76b6acc09b2da5b6ac5a39d"</span></code></pre></div>
 </div>
 <div id="get-the-average-property-prices" class="section level2">
 <h2 class="hasAnchor">
@@ -386,17 +389,71 @@
 <h2 class="hasAnchor">
 <a href="#property-listings" class="anchor"></a>Property listings</h2>
 <p>You can get the Zoopla listings for a particular area using the following call:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">listings &lt;-<span class="st"> </span><span class="kw"><a href="reference/property_listings.html">property_listings</a></span>(<span class="dt">postcode =</span> <span class="st">"EH1 2NG"</span>, <span class="dt">API_key =</span> zoopla_key)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">listings &lt;-<span class="st"> </span><span class="kw"><a href="reference/property_listings.html">property_listings</a></span>(<span class="dt">postcode =</span> <span class="st">"E15 4QS"</span>, <span class="dt">API_key =</span> zoopla_key)
 
 <span class="co"># overview</span>
 <span class="kw">names</span>(listings)
 <span class="co">#&gt;  [1] "area_name"    "bounding_box" "country"      "county"      </span>
-<span class="co">#&gt;  [5] "latitude"     "longitude"    "postcode"     "result_count"</span>
-<span class="co">#&gt;  [9] "street"       "town"</span>
+<span class="co">#&gt;  [5] "latitude"     "listing"      "listing"      "listing"     </span>
+<span class="co">#&gt;  [9] "listing"      "listing"      "listing"      "listing"     </span>
+<span class="co">#&gt; [13] "listing"      "listing"      "listing"      "longitude"   </span>
+<span class="co">#&gt; [17] "postcode"     "result_count" "street"       "town"</span>
 
 <span class="kw">str</span>(listings[<span class="dv">6</span>])
 <span class="co">#&gt; List of 1</span>
-<span class="co">#&gt;  $ longitude: chr "-3.201478"</span></code></pre></div>
+<span class="co">#&gt;  $ listing:List of 42</span>
+<span class="co">#&gt;   ..$ agent_address       : chr "5 Harbour Exchange Square, Canary Wharf, London"</span>
+<span class="co">#&gt;   ..$ agent_logo          : chr "https://st.zoocdn.com/zoopla_static_agent_logo_(457665).png"</span>
+<span class="co">#&gt;   ..$ agent_name          : chr "Ernest-Brooks International"</span>
+<span class="co">#&gt;   ..$ agent_phone         : chr "020 8115 8214"</span>
+<span class="co">#&gt;   ..$ category            : chr "Residential"</span>
+<span class="co">#&gt;   ..$ country             : chr "England"</span>
+<span class="co">#&gt;   ..$ country_code        : chr "gb"</span>
+<span class="co">#&gt;   ..$ county              : chr "London"</span>
+<span class="co">#&gt;   ..$ description         : chr "*investors portfolio* We are delighted to offer a 5 property off-plan investment portfolio, available for bulk "| __truncated__</span>
+<span class="co">#&gt;   ..$ details_url         : chr "https://www.zoopla.co.uk/for-sale/details/45389808?utm_source=v1:7-KHQG7DHECLpUX8bL0ztmDrIhQoz7qY&amp;utm_medium=api"</span>
+<span class="co">#&gt;   ..$ displayable_address : chr "Stratford City, Stratford E15"</span>
+<span class="co">#&gt;   ..$ first_published_date: chr "2017-10-26 15:46:22"</span>
+<span class="co">#&gt;   ..$ floor_area          :List of 3</span>
+<span class="co">#&gt;   .. ..$ name : chr "max_floor_area"</span>
+<span class="co">#&gt;   .. ..$ units: chr "sq_feet"</span>
+<span class="co">#&gt;   .. ..$ value: chr "782"</span>
+<span class="co">#&gt;   ..$ floor_area          :List of 3</span>
+<span class="co">#&gt;   .. ..$ name : chr "min_floor_area"</span>
+<span class="co">#&gt;   .. ..$ units: chr "sq_feet"</span>
+<span class="co">#&gt;   .. ..$ value: chr "782"</span>
+<span class="co">#&gt;   ..$ furnished_state     : NULL</span>
+<span class="co">#&gt;   ..$ image_150_113_url   : chr "https://lid.zoocdn.com/150/113/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ image_354_255_url   : chr "https://lid.zoocdn.com/354/255/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ image_50_38_url     : chr "https://lid.zoocdn.com/50/38/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ image_645_430_url   : chr "https://lid.zoocdn.com/645/430/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ image_80_60_url     : chr "https://lid.zoocdn.com/80/60/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ image_caption       : NULL</span>
+<span class="co">#&gt;   ..$ image_url           : chr "https://lid.zoocdn.com/354/255/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span>
+<span class="co">#&gt;   ..$ last_published_date : chr "2017-12-18 19:24:22"</span>
+<span class="co">#&gt;   ..$ latitude            : chr "51.54048"</span>
+<span class="co">#&gt;   ..$ listing_id          : chr "45389808"</span>
+<span class="co">#&gt;   ..$ listing_status      : chr "sale"</span>
+<span class="co">#&gt;   ..$ longitude           : chr "0.00032"</span>
+<span class="co">#&gt;   ..$ new_home            : chr "true"</span>
+<span class="co">#&gt;   ..$ num_bathrooms       : chr "0"</span>
+<span class="co">#&gt;   ..$ num_bedrooms        : chr "8"</span>
+<span class="co">#&gt;   ..$ num_floors          : chr "0"</span>
+<span class="co">#&gt;   ..$ num_recepts         : chr "0"</span>
+<span class="co">#&gt;   ..$ outcode             : chr "E15"</span>
+<span class="co">#&gt;   ..$ post_town           : chr "London"</span>
+<span class="co">#&gt;   ..$ price               : chr "2950000"</span>
+<span class="co">#&gt;   ..$ price_change        :List of 4</span>
+<span class="co">#&gt;   .. ..$ date     : chr "2017-10-26 15:45:57"</span>
+<span class="co">#&gt;   .. ..$ direction: NULL</span>
+<span class="co">#&gt;   .. ..$ percent  : chr "0%"</span>
+<span class="co">#&gt;   .. ..$ price    : chr "2950000"</span>
+<span class="co">#&gt;   ..$ property_report_url : chr "https://www.zoopla.co.uk/area-report/?listing_id=45389808&amp;z_cmp=property%20report&amp;z_con=get%20a%20report&amp;z_med="| __truncated__</span>
+<span class="co">#&gt;   ..$ property_type       : chr "Flat"</span>
+<span class="co">#&gt;   ..$ short_description   : chr "&lt;p class=\"top\"&gt;*investors portfolio* We are delighted to offer a 5 property off-plan investment portfolio, av"| __truncated__</span>
+<span class="co">#&gt;   ..$ status              : chr "for_sale"</span>
+<span class="co">#&gt;   ..$ street_name         : chr "Stratford City"</span>
+<span class="co">#&gt;   ..$ thumbnail_url       : chr "https://lid.zoocdn.com/80/60/f6d43e81376feadce3f176390bcff7f7dac92a49.jpg"</span></code></pre></div>
 </div>
 <div id="get-house-price-charts" class="section level2">
 <h2 class="hasAnchor">

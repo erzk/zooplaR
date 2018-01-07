@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -39,7 +39,7 @@
   <body>
     <div class="container template-reference-topic">
       <header>
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -71,6 +71,9 @@
       <a href="../articles/Introduction_to_zooplaR.html">Introduction to zooplaR</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
       
@@ -149,17 +152,19 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='no'>s_id</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='get_session_id.html'>get_session_id</a></span>(<span class='no'>APIKEY</span>)
+    <pre class="examples"># NOT RUN {
+s_id <- get_session_id(APIKEY)
 
-<span class='co'># get the property id but make sure that the ad is still live</span>
-<span class='no'>prop_id</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='postcode_properties.html'>postcode_properties</a></span>(<span class='st'>"EH12NG"</span>, <span class='st'>"YOUR_API_KEY"</span>)
-<span class='no'>p_id</span> <span class='kw'>&lt;-</span> <span class='no'>prop_id</span>$<span class='no'>agent</span>$<span class='no'>property_id</span>
+# get the property id but make sure that the ad is still live
+prop_id <- postcode_properties("EH12NG", "YOUR_API_KEY")
+p_id <- prop_id$agent$property_id
 
-<span class='co'># if the values provided are incorrect then error 400 is returned</span>
-<span class='fu'>refine_estimate</span>(<span class='no'>p_id</span>, <span class='no'>s_id</span>, <span class='st'>"detached"</span>, <span class='st'>"freehold"</span>, <span class='st'>"4"</span>, <span class='st'>"1"</span>, <span class='st'>"1"</span>, <span class='no'>APIKEY</span>)
-<span class='co'># refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007", "detached", "freehold", "4", "1", "1", APIKEY)</span>
-<span class='co'># }</span><div class='input'>
+# if the values provided are incorrect then error 400 is returned
+refine_estimate(p_id, s_id, "detached", "freehold", "4", "1", "1", APIKEY)
+# refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007",
+"detached", "freehold", "4", "1", "1", APIKEY)
+# }
+<div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

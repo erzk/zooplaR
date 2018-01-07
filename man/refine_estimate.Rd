@@ -41,7 +41,8 @@ p_id <- prop_id$agent$property_id
 
 # if the values provided are incorrect then error 400 is returned
 refine_estimate(p_id, s_id, "detached", "freehold", "4", "1", "1", APIKEY)
-# refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007", "detached", "freehold", "4", "1", "1", APIKEY)
+# refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007",
+"detached", "freehold", "4", "1", "1", APIKEY)
 }
 
 }

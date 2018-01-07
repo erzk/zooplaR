@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -39,7 +39,7 @@
   <body>
     <div class="container template-reference-index">
       <header>
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -71,6 +71,9 @@
       <a href="../articles/Introduction_to_zooplaR.html">Introduction to zooplaR</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="../news/index.html">News</a>
 </li>
       </ul>
       
@@ -109,7 +112,7 @@
       <tbody>
         <tr>
           <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+            <h2 id="section-graph-functions" class="hasAnchor"><a href="#section-graph-functions" class="anchor"></a>Graph functions</h2>
             <p class="section-desc"></p>
           </th>
         </tr>
@@ -122,10 +125,38 @@
         </tr><tr>
           <!--  -->
           <td>
+            <p><code><a href="local_info_graphs.html">local_info_graphs</a></code> </p>
+          </td>
+          <td><p>Local Info Graphs</p></td>
+        </tr>
+      </tbody><tbody>
+        <tr>
+          <th colspan="2">
+            <h2 id="section-index-functions" class="hasAnchor"><a href="#section-index-functions" class="anchor"></a>Index functions</h2>
+            <p class="section-desc"></p>
+          </th>
+        </tr>
+        <tr>
+          <!--  -->
+          <td>
             <p><code><a href="area_zed_indices.html">area_zed_indices</a></code> </p>
           </td>
           <td><p>Area Zed-Indices</p></td>
         </tr><tr>
+          <!--  -->
+          <td>
+            <p><code><a href="zed_index.html">zed_index</a></code> </p>
+          </td>
+          <td><p>Zed-Index</p></td>
+        </tr>
+      </tbody><tbody>
+        <tr>
+          <th colspan="2">
+            <h2 id="section-prices" class="hasAnchor"><a href="#section-prices" class="anchor"></a>Prices</h2>
+            <p class="section-desc"></p>
+          </th>
+        </tr>
+        <tr>
           <!--  -->
           <td>
             <p><code><a href="average_area_sold_price.html">average_area_sold_price</a></code> </p>
@@ -137,7 +168,15 @@
             <p><code><a href="average_sold_prices.html">average_sold_prices</a></code> </p>
           </td>
           <td><p>Average Sold Prices</p></td>
-        </tr><tr>
+        </tr>
+      </tbody><tbody>
+        <tr>
+          <th colspan="2">
+            <h2 id="section-other-functions" class="hasAnchor"><a href="#section-other-functions" class="anchor"></a>Other functions</h2>
+            <p class="section-desc"><p>Miscellaneous functions</p></p>
+          </th>
+        </tr>
+        <tr>
           <!--  -->
           <td>
             <p><code><a href="geo_autocomplete.html">geo_autocomplete</a></code> </p>
@@ -149,12 +188,6 @@
             <p><code><a href="get_session_id.html">get_session_id</a></code> </p>
           </td>
           <td><p>Get Session ID</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="local_info_graphs.html">local_info_graphs</a></code> </p>
-          </td>
-          <td><p>Local Info Graphs</p></td>
         </tr><tr>
           <!--  -->
           <td>
@@ -179,12 +212,6 @@
             <p><code><a href="refine_estimate.html">refine_estimate</a></code> </p>
           </td>
           <td><p>Refine Estimate</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="zed_index.html">zed_index</a></code> </p>
-          </td>
-          <td><p>Zed-Index</p></td>
         </tr>
       </tbody>
       </table>
@@ -194,7 +221,10 @@
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#section-graph-functions">Graph functions</a></li>
+      <li><a href="#section-index-functions">Index functions</a></li>
+      <li><a href="#section-prices">Prices</a></li>
+      <li><a href="#section-other-functions">Other functions</a></li>
     </ul>
   </div>
 </div>
