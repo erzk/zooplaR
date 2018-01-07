@@ -23,7 +23,8 @@
 #' \dontrun{
 #' 
 #' area_zed_indices("sw185rw", "postcodes", "outcode", 1, 10, "YOUR_API_KEY", "descending")
-#' area_zed_indices(postcode = "sw185rw", area_type = "postcodes", output_type = "outcode", API_key = "YOUR_API_KEY")
+#' area_zed_indices(postcode = "sw185rw", area_type = "postcodes",
+#' output_type = "outcode", API_key = "YOUR_API_KEY")
 #' }
 #' 
 area_zed_indices <- function(postcode=NULL, area_type=NULL, output_type=NULL,
@@ -40,7 +41,7 @@ area_zed_indices <- function(postcode=NULL, area_type=NULL, output_type=NULL,
                         page_number = page_number, page_size = page_size,
                         api_key = API_key, ordering = ordering))
   warn_for_status(r)
-  r %>% content(encoding="UTF-8") %>%
+  r %>% content(encoding = "UTF-8") %>%
     xmlParse() %>%
     xmlToList() %>%
     return()

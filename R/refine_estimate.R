@@ -27,7 +27,8 @@
 #' 
 #' # if the values provided are incorrect then error 400 is returned
 #' refine_estimate(p_id, s_id, "detached", "freehold", "4", "1", "1", APIKEY)
-#' # refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007", "detached", "freehold", "4", "1", "1", APIKEY)
+#' # refine_estimate("965889", "839ddfa0fa5d810d9afa148960775007",
+#' "detached", "freehold", "4", "1", "1", APIKEY)
 #' }
 #' 
 refine_estimate <- function(property_id, session, property_type, tenure,
@@ -36,7 +37,10 @@ refine_estimate <- function(property_id, session, property_type, tenure,
   passed <- names(as.list(match.call())[-1])
   # TODO add missing(property_id) etc.
   if (any(!defined %in% passed)) {
-    stop(paste("Missing values for", paste(setdiff(defined, passed), collapse=", ")))
+    stop(paste("Missing values for", paste(setdiff(defined, passed), collapse = ", ")))
+  }
+  if (!is.character(API_key)) {
+    stop("Please provide an API key.")
   }
   # TODO check for the valid entries
   r <- GET("https://api.zoopla.co.uk/api/v1/refine_estimate",
@@ -45,7 +49,7 @@ refine_estimate <- function(property_id, session, property_type, tenure,
                         num_bedrooms = num_bedrooms, num_bathrooms = num_bathrooms,
                         num_receptions = num_receptions))
   warn_for_status(r)
-  r %>% content(encoding="UTF-8") %>%
+  r %>% content(encoding = "UTF-8") %>%
     xmlParse() %>%
     xmlToList() %>%
     return()
