@@ -22,10 +22,7 @@
 #' property_listings(area = "Nottingham", API_key = "YOUR_API_KEY")
 #' }
 #' 
-property_listings <- function(postcode=NULL, area=NULL, API_key=NULL){
-  # if (missing(postcode) || missing(area)) {
-  #   stop("Please provide a valid UK postcode or area name. It should be unambiguous.")
-  # }
+property_listings <- function(postcode = NULL, area = NULL, API_key = NULL){
   if (!is.character(API_key)) {
     stop("Please provide an API key.")
   }
