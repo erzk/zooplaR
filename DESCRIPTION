@@ -1,10 +1,9 @@
 Package: zooplaR
 Type: Package
-Title: API Wrapper for Zoopla (UK Property Prices)
+Title: API Wrapper for zoopla.co.uk (UK Property Prices)
 Version: 0.1
-Date: 2017-03-12
-Author: Eryk Walczak <eryk.j.walczak@gmail.com>
-Maintainer: Eryk Walczak <eryk.j.walczak@gmail.com>
+Date: 2018-01-07
+Authors@R: person("Eryk", "Walczak", email = "eryk.j.walczak@gmail.com", role = c("aut", "cre"))
 Description: Access UK housing market data from Zoopla.
 License: GPL-3 + file LICENSE
 URL: https://github.com/erzk/zooplaR
