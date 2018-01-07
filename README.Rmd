@@ -15,8 +15,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![Travis-CI Build Status](https://travis-ci.org/erzk/zooplaR.svg?branch=master)](https://travis-ci.org/erzk/zooplaR)
+[![Coverage Status](https://img.shields.io/codecov/c/github/erzk/zooplaR/master.svg)](https://codecov.io/github/erzk/zooplaR?branch=master)
+[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/PostcodesioR)](https://cran.r-project.org/package=PostcodesioR)
 
 ### About

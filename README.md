@@ -2,7 +2,7 @@ zooplaR
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![Travis-CI Build Status](https://travis-ci.org/erzk/zooplaR.svg?branch=master)](https://travis-ci.org/erzk/zooplaR) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/PostcodesioR)](https://cran.r-project.org/package=PostcodesioR)
+[![Travis-CI Build Status](https://travis-ci.org/erzk/zooplaR.svg?branch=master)](https://travis-ci.org/erzk/zooplaR) [![Coverage Status](https://img.shields.io/codecov/c/github/erzk/zooplaR/master.svg)](https://codecov.io/github/erzk/zooplaR?branch=master) [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/PostcodesioR)](https://cran.r-project.org/package=PostcodesioR)
 
 ### About
 
@@ -54,7 +54,7 @@ This will be useful for other calls
 
 ``` r
 get_session_id(zoopla_key)
-#> [1] "492baff7d4cd3bdba14ca3d15a9541ba"
+#> [1] "2a1ff049229e54b76fb2be7d226b1dcd"
 ```
 
 Get the average property prices

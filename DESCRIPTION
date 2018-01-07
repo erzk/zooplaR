@@ -18,7 +18,7 @@ Imports:
     XML (>= 3.98-1.5)
 Suggests: knitr,
     rmarkdown,
-    testthat
+    testthat,
+    covr
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
-
