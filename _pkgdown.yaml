@@ -1,0 +1,32 @@
+title: zooplaR
+url: https://erzk.github.io/zooplaR
+template:
+  params:
+    bootswatch: pulse
+reference:
+  - title: Graph functions
+    desc: Create graphs
+    contents:
+      - '`area_value_graphs`'
+      - '`local_info_graphs`'
+  - title: Index functions
+    desc: Create indices
+    contents:
+      - '`area_zed_indices`'
+      - '`zed_index `'
+  - title: Prices
+    desc: Create indices
+    contents:
+      - '`average_area_sold_price`'
+      - '`average_sold_prices`'
+  - title: Other functions
+    desc: Miscellaneous functions
+    contents:
+      - '`geo_autocomplete`'
+      - '`get_session_id`'
+      - '`postcode_properties`'
+      - '`property_listings`'
+      - '`property_rich_list`'
+      - '`refine_estimate`'
+navbar:
+  type: standard
