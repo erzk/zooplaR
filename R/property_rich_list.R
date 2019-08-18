@@ -19,4 +19,5 @@ property_rich_list <- function(API_key){
   if (!is.character(API_key)) {
     stop("Please provide an API key.")
   }
+  # TODO
 }
