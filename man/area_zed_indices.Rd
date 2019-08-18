@@ -4,9 +4,9 @@
 \alias{area_zed_indices}
 \title{Area Zed-Indices}
 \usage{
-area_zed_indices(postcode = NULL, area_type = NULL, output_type = NULL,
-  page_number = NULL, page_size = NULL, API_key = NULL,
-  ordering = "descending")
+area_zed_indices(postcode = NULL, area_type = NULL,
+  output_type = NULL, page_number = NULL, page_size = NULL,
+  API_key = NULL, ordering = "descending")
 }
 \arguments{
 \item{postcode}{A string. Valid UK postcode.}
