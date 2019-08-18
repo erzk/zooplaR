@@ -3,10 +3,13 @@ Type: Package
 Title: API Wrapper for zoopla.co.uk (UK Property Prices)
 Version: 0.1
 Date: 2018-01-07
-Authors@R: person("Eryk", "Walczak", email = "eryk.j.walczak@gmail.com", role = c("aut", "cre"))
+Authors@R: person("Eryk", "Walczak", 
+                  email = "eryk.j.walczak@gmail.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-8724-462X"))
 Description: Access UK housing market data from Zoopla.
 License: GPL-3 + file LICENSE
-URL: https://github.com/erzk/zooplaR
+URL: https://erzk.github.io/zooplaR/
 BugReports: https://github.com/erzk/zooplaR/issues
 Encoding: UTF-8
 LazyData: TRUE
@@ -20,5 +23,5 @@ Suggests: knitr,
     rmarkdown,
     testthat,
     covr
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 VignetteBuilder: knitr
