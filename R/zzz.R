@@ -8,13 +8,13 @@ skip_if_no_auth <- function() {
 
 # TODO add packages
 return_content <- function(x) {
-  warn_for_status(x)
+  httr::warn_for_status(x)
   
   if (httr::status_code(x) == 200) {
     x %>%
-    content(encoding = "UTF-8") %>%
-    xmlParse() %>%
-    xmlToList() %>%
+    httr::content(encoding = "UTF-8") %>%
+    XML::xmlParse() %>%
+    XML::xmlToList() %>%
     return()
   }
 }
